@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local data (runtime generated)
+# vector.db is generated at runtime - do NOT commit
+# PDFs are stored separately in ~/Desktop/创意案例库
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs
+*.log
+/tmp/*.log
+
+# Optional: keep test data but not production db
+# tests/fixtures/
