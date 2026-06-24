@@ -34,3 +34,12 @@ env/
 
 # Optional: keep test data but not production db
 # tests/fixtures/
+
+# Build artifacts
+cmd/via54_rag_go/via54_rag_go
+*.exe
+
+# Large runtime databases (users regenerate with scripts/rebuild_index.py)
+# via54_rag/vector.db is generated at runtime — see scripts/rebuild_index.py
+via54_rag/vector.db
+via54_rag/test.db

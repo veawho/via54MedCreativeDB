@@ -15,6 +15,10 @@ CHUNK_SIZE = 300        # 每段字符数
 CHUNK_OVERLAP = 50      # 重叠字符数
 MIN_CHUNK_LEN = 50      # 最小段长度
 
+# ── 中文 n-gram 配置 ────────────────────────────────
+# 中文字符 unigram（单字）+ bigram（双字滑动窗口）
+MIN_CN_CHAR = 2         # 最少中文字符数（过滤碎片）
+
 os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
 
 # ── SQLite 初始化 ──────────────────────────────────
@@ -53,14 +57,33 @@ def init_db():
     conn.commit()
     return conn
 
-# ── 文本预处理 ────────────────────────────────────
+# ── 中文 n-gram 工具 ─────────────────────────────────
+def _cn_ngrams(text: str) -> List[str]:
+    """提取中文 unigram + bigram（2-gram 滑动窗口）"""
+    # 提取所有连续中文字符序列
+    cn_seqs = re.findall(r'[\u4e00-\u9fff]+', text)
+    tokens = []
+    for seq in cn_seqs:
+        if len(seq) < 2:
+            continue
+        # unigram: 2字及以上词
+        for i in range(len(seq)):
+            for n in [2, 3]:  # bigram + trigram
+                if i + n <= len(seq):
+                    tokens.append(seq[i:i + n])
+    return tokens
+
+# ── 文本预处理 ───────────────────────────────────
 def tokenize(text: str) -> List[str]:
     text = text.lower()
-    # 中英混合分词
-    tokens = re.findall(r'[\u4e00-\u9fff]+|[a-z0-9]+', text)
+    # 英文/数字 token
+    en_tokens = re.findall(r'[a-z0-9]+', text)
+    # 中文 n-gram
+    cn_tokens = _cn_ngrams(text)
+    all_tokens = en_tokens + cn_tokens
     # 过滤停用词
-    stopwords = {'的', '了', '在', '是', '我', '有', '和', '就', '不', '人', '都', '一', '一个', '上', '也', '很', '到', '说', '要', '去', '你', '会', '着', '没有', '看', '好', '自己', '这', '那', '它', '他', '她', '们', '中', '为', '与', '但', '或', '以', '而', '及', '等', '其', '被', '或', '把', '给', '让', '从', '用', '对', '于', '之', '所', '而后', '如果', '因为', '所以', '虽然', '但是', '然而', '并且', '或者', '以及', '当', '时', '后', '前', '里', '可', '能', '还', '又', '已', '曾', '正', '被', '将', '被'}
-    return [t for t in tokens if len(t) > 1 and t not in stopwords]
+    stopwords = {'的', '了', '在', '是', '我', '有', '和', '就', '不', '人', '都', '一', '一个', '上', '也', '很', '到', '说', '要', '去', '你', '会', '着', '没有', '看', '好', '自己', '这', '那', '它', '他', '她', '们', '中', '为', '与', '但', '或', '以', '而', '及', '等', '其', '被', '或', '把', '给', '让', '从', '用', '对', '于', '之', '所', '而后', '如果', '因为', '所以', '虽然', '但是', '然而', '并且', '或者', '以及', '当', '时', '后', '前', '里', '可', '能', '还', '又', '已', '曾', '正', '将'}
+    return [t for t in all_tokens if len(t) >= 2 and t not in stopwords]
 
 def compute_tf(tokens: List[str]) -> Dict[str, float]:
     if not tokens:
@@ -197,13 +220,20 @@ def search(query: str, top_k: int = 5) -> List[Dict]:
     if not q_tokens:
         return []
     
-    # 查询 tokens 的 IDF
+    # 查询 tokens 的 doc_count，实时计算真实 IDF
     placeholders = ','.join(['?'] * len(q_tokens))
     c.execute(f"SELECT term, doc_count FROM idf WHERE term IN ({placeholders})", q_tokens)
-    idf_map = {row[0]: row[1] for row in c.fetchall()}
-    
+    doc_count_map = {row[0]: row[1] for row in c.fetchall()}
+
     c.execute("SELECT COUNT(*) FROM doc_meta")
     N = c.fetchone()[0] or 1
+
+    # 实时计算真实 IDF：idf = log(N / (dc+1)) + 1
+    import math as _math
+    idf_map = {
+        term: _math.log(N / (dc + 1)) + 1
+        for term, dc in doc_count_map.items()
+    }
     
     # 计算 query TF
     q_tf = compute_tf(q_tokens)
