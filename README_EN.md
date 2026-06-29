@@ -1,5 +1,9 @@
 # via54MedCreativeDB
 
+
+> **🌐 Language**: [🇨🇳 中文](./README.md) | [🇺🇸 English](#) (current)
+>
+> _This document is in English. For Chinese, click above._
 > Medical communication creative vector knowledge base - RAG semantic search + 52 global creative case reports
 
 [![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL--3.0-blue.svg)](LICENSE)
