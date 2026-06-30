@@ -332,7 +332,7 @@ total_images_downloaded: {len(downloaded)}
 
 # {title}
 
-> **深度综合报告 v3.0** · via54MedCreativeDB · {datetime.now().strftime('%Y-%m-%d')}
+> **深度综合报告 v3.0** · via54ADIdeahub · {datetime.now().strftime('%Y-%m-%d')}
 
 ## 案例概述
 

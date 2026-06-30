@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-召回率评估脚本 — via54MedCreativeDB
+召回率评估脚本 — via54ADIdeahub
 用法: python3 scripts/evaluate_recall.py [--query-file FILE]
 
 功能:

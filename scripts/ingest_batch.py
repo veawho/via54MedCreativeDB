@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-批量 PDF 导入脚本 — via54MedCreativeDB
+批量 PDF 导入脚本 — via54ADIdeahub
 用法: python3 scripts/ingest_batch.py [--pdf-dir DIR] [--force]
 
 功能:

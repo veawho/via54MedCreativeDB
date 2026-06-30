@@ -14,7 +14,7 @@
 ### 流程 A：批量处理目录
 
 ```bash
-python3 ~/Desktop/developments/via54MedCreativeDB/scripts/expand_sources_and_download_images.py
+python3 G:/agent/ai/projects/via54ADIdeahub/scripts/expand_sources_and_download_images.py
 ```
 
 **输出：** 每个案例文件夹生成 `{案例名}_深度报告.md`
@@ -22,7 +22,7 @@ python3 ~/Desktop/developments/via54MedCreativeDB/scripts/expand_sources_and_dow
 ### 流程 B：单案例扩充
 
 ```bash
-python3 ~/Desktop/developments/via54MedCreativeDB/scripts/enrich_case.py \
+python3 G:/agent/ai/projects/via54ADIdeahub/scripts/enrich_case.py \
   --pdf ~/Desktop/创意案例库/xxx.pdf \
   --output ~/Desktop/创意案例库_扩充/xxx/
 ```
@@ -158,10 +158,10 @@ python3 ~/Desktop/developments/via54MedCreativeDB/scripts/enrich_case.py \
 
 ```bash
 # 批量生成深度报告
-python3 ~/Desktop/developments/via54MedCreativeDB/scripts/expand_sources_and_download_images.py
+python3 G:/agent/ai/projects/via54ADIdeahub/scripts/expand_sources_and_download_images.py
 
 # 生成索引
-python3 ~/Desktop/developments/via54MedCreativeDB/scripts/batch_enrich.py
+python3 G:/agent/ai/projects/via54ADIdeahub/scripts/batch_enrich.py
 
 # 统计
 ls -la ~/Desktop/创意案例库_扩充/*/深度报告.md | wc -l

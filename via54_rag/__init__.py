@@ -1,5 +1,5 @@
 """
-via54MedCreativeDB - 医学传播创意向量知识库
+via54ADIdeahub - 医学传播创意向量知识库
 Pure Python TF-IDF + SQLite 轻量向量检索
 不依赖 numpy/sklearn/chromadb/faiss
 """
@@ -9,7 +9,7 @@ from typing import List, Dict, Tuple, Optional
 import pypdf
 
 # ── 配置 ──────────────────────────────────────────
-DB_PATH = "/Users/david/Desktop/developments/via54MedCreativeDB/via54_rag/vector.db"
+DB_PATH = "G:/agent/ai/projects/via54ADIdeahub/via54_rag/vector.db"
 PDF_DIR = os.path.expanduser("/Users/david/Desktop/创意案例库")
 CHUNK_SIZE = 300        # 每段字符数
 CHUNK_OVERLAP = 50      # 重叠字符数

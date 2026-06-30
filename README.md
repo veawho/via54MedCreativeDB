@@ -1,10 +1,10 @@
 ---
-title: via54MedCreativeDB
+title: via54ADIdeahub
 description: 医学传播创意向量知识库 — 纯 Python TF-IDF + SQLite，无需外部向量 API
 version: 1.0
 date: 2026-06-22
 license: MIT
-repository: ~/Desktop/developments/via54MedCreativeDB
+repository: G:/agent/ai/projects/via54ADIdeahub
 keywords: [medical-marketing, creative-brief, case-study, tfidf, vector-search, hermes-agent, rag, knowledge-base]
 topics: [medical-marketing, creative-strategy, campaign-analysis, 12-dimension-framework]
 framework_sources: [digitaling, meihua, cannes-lions]
@@ -13,7 +13,7 @@ python: "≥3.9"
 last_updated: 2026-06-22
 ---
 
-# via54MedCreativeDB
+# via54ADIdeahub
 
 
 > **🌐 Language**: [🇨🇳 中文](#) (current) | [🇺🇸 English](./README_EN.md)
@@ -32,7 +32,7 @@ last_updated: 2026-06-22
 ## 目录结构
 
 ```
-via54MedCreativeDB/
+via54ADIdeahub/
 ├── DESIGN.md               # 完整设计文档（含12维框架）
 ├── README.md               # 本文档
 ├── LICENSE                 # MIT
@@ -63,7 +63,7 @@ pip install -r requirements.txt
 
 ## 🔗 集成 (v1.1.0 新增)
 
-via54MedCreativeDB v1.1.0 跟踪 3 个高星 RAG / Vector DB / AI scraper 项目, 评估 qdrant 集成:
+via54ADIdeahub v1.1.0 跟踪 3 个高星 RAG / Vector DB / AI scraper 项目, 评估 qdrant 集成:
 
 - [qdrant/qdrant](https://github.com/qdrant/qdrant) (25K) - Vector database
 - [chroma-core/chroma](https://github.com/chroma-core/chroma) (18K) - AI-native embedding database
@@ -77,7 +77,7 @@ via54MedCreativeDB v1.1.0 跟踪 3 个高星 RAG / Vector DB / AI scraper 项目
 
 ```bash
 # 构建索引（新增 PDF 后必须执行）
-cd ~/Desktop/developments/via54MedCreativeDB
+cd G:/agent/ai/projects/via54ADIdeahub
 python3 -m via54_rag build --force
 
 # 启动服务

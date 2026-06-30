@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-案例扩充引擎 — via54MedCreativeDB
+案例扩充引擎 — via54ADIdeahub
 用法:
   python3 enrich_case.py --pdf /path/to/case.pdf --output ~/Desktop/创意案例库_扩充
   python3 enrich_case.py --batch --pdf-dir /path/to/pdfs --output ~/Desktop/创意案例库_扩充
@@ -22,7 +22,7 @@ from datetime import datetime
 PDF_DIR   = Path("/Users/david/Desktop/创意案例库")
 OUTPUT_DIR = Path.home() / "Desktop" / "创意案例库_扩充"
 DB_PATH    = Path(__file__).parent.parent / "via54_rag" / "vector.db"
-PYTHON_BIN = "/Users/david/.hermes/hermes-agent/venv/bin/python3"
+PYTHON_BIN = "C:/Users/via54/AppData/Local/hermes/venv/Scripts/python.exe"
 
 # ─────────────────────────────────────────────
 # 工具函数

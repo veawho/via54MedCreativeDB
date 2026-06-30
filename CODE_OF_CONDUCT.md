@@ -24,7 +24,7 @@
 
 ### 报告
 
-通过 [GitHub Issues](https://github.com/veawho/via54MedCreativeDB/issues) 报告问题.
+通过 [GitHub Issues](https://github.com/veawho/via54ADIdeahub/issues) 报告问题.
 
 ---
 
@@ -42,4 +42,4 @@ Examples of unacceptable behavior: sexualized language, trolling/insulting comme
 
 ### Reporting
 
-Report issues through [GitHub Issues](https://github.com/veawho/via54MedCreativeDB/issues).
+Report issues through [GitHub Issues](https://github.com/veawho/via54ADIdeahub/issues).

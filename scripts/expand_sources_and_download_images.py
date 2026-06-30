@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-案例深度扩充脚本 v2 — via54MedCreativeDB
+案例深度扩充脚本 v2 — via54ADIdeahub
 功能：
   1. 从 metadata.json 提取源 URL，下载文章图片到 images/ 目录
   2. 生成深度综合报告 enriched_v2.md（远超原 enriched.md 的深度总结）
@@ -316,7 +316,7 @@ def generate_v2_report(case_name, meta, existing_content, original_urls):
         "",
         f"# {title}",
         "",
-        f"> **深度综合报告 v2.0** · via54MedCreativeDB · 2026-06-23",
+        f"> **深度综合报告 v2.0** · via54ADIdeahub · 2026-06-23",
         "",
         "> 本报告基于PDF原文、网络扩充、规则推断综合生成，包含完整12维框架分析、真实数据指标、100+来源链接和下载图片清单。",
         "",

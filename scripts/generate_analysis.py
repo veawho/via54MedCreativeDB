@@ -7,7 +7,7 @@ import json, time, subprocess, sys, re
 from pathlib import Path
 from datetime import datetime
 
-PYTHON_BIN = "/Users/david/.hermes/hermes-agent/venv/bin/python3"
+PYTHON_BIN = "C:/Users/via54/AppData/Local/hermes/venv/Scripts/python.exe"
 CASES_DIR   = Path.home() / "Desktop" / "创意案例库_扩充"
 MINIMAX_API_KEY = "YOUR_API_KEY"  # 从环境变量读取
 
@@ -216,7 +216,7 @@ web_enriched: true
 
 # {title}
 
-> 网络扩充 + D1-D12框架分析版 · 2026-06-23 · via54MedCreativeDB
+> 网络扩充 + D1-D12框架分析版 · 2026-06-23 · via54ADIdeahub
 
 ## 案例概述
 

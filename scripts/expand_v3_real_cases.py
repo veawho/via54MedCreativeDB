@@ -329,7 +329,7 @@ total_images_downloaded: {len(downloaded_imgs)}
 
 # {title}
 
-> **深度综合报告 v3.0** · via54MedCreativeDB · {datetime.now().strftime('%Y-%m-%d')}
+> **深度综合报告 v3.0** · via54ADIdeahub · {datetime.now().strftime('%Y-%m-%d')}
 
 > 本报告基于广告门/梅花网原文章节内容生成，包含真实活动详情、数据指标、下载图片和来源链接。
 
@@ -705,7 +705,7 @@ total_images_downloaded: {len(downloaded_imgs)}
 
 # {title}
 
-> **深度综合报告 v3.0** · via54MedCreativeDB · {datetime.now().strftime('%Y-%m-%d')}
+> **深度综合报告 v3.0** · via54ADIdeahub · {datetime.now().strftime('%Y-%m-%d')}
 
 > 本报告基于广告门/梅花网原文章节内容生成，包含真实活动详情、数据指标、下载图片和来源链接。
 

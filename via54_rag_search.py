@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-via54_rag_search.py — via54MedCreativeDB 查询 CLI
+via54_rag_search.py — via54ADIdeahub 查询 CLI
 用法: python3 via54_rag_search.py <搜索query> [top_k]
 示例: python3 via54_rag_search.py "医药品牌情感创意" 5
 """

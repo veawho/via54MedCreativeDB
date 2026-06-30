@@ -18,7 +18,7 @@ import (
 )
 
 // ── Config ──────────────────────────────────────────────
-var dbPath = "/Users/david/Desktop/developments/via54MedCreativeDB/via54_rag/vector.db"
+var dbPath = "G:/agent/ai/projects/via54ADIdeahub/via54_rag/vector.db"
 
 // ── In-memory index ─────────────────────────────────────
 type chunk struct {

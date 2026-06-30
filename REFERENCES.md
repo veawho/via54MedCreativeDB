@@ -20,7 +20,7 @@
 | via54Larkbotgo | 飞书/Lark bot 跨 OS 集成 | [GitHub](https://github.com/veawho/via54Larkbotgo) |
 | via54Larkgroups | Local-only Feishu (Lark) chat archive | [GitHub](https://github.com/veawho/via54Larkgroups) |
 | via54Larkfix | 飞书集成全套资料 + 修复历史归档 | [GitHub](https://github.com/veawho/via54Larkfix) |
-| via54MedCreativeDB | 医学传播创意向量知识库 (RAG) | [GitHub](https://github.com/veawho/via54MedCreativeDB) |
+| via54ADIdeahub | 医学传播创意向量知识库 (RAG) | [GitHub](https://github.com/veawho/via54ADIdeahub) |
 | via54GitHub | GitHub 上传同步经验整理 | [GitHub](https://github.com/veawho/via54GitHub) |
 | via54Idea | 巫师叔叔的想法与闲聊整理 | [GitHub](https://github.com/veawho/via54Idea) |
 | Notebook | 日常记录 | [GitHub](https://github.com/veawho/Notebook) |
@@ -62,7 +62,7 @@ This project is part of the via54 series. Explore the via54 ecosystem:
 | via54Larkbotgo | Lark/Feishu bot cross-OS integration | [GitHub](https://github.com/veawho/via54Larkbotgo) |
 | via54Larkgroups | Local-only Feishu chat archive | [GitHub](https://github.com/veawho/via54Larkgroups) |
 | via54Larkfix | Feishu integration docs + fix history | [GitHub](https://github.com/veawho/via54Larkfix) |
-| via54MedCreativeDB | Medical communication creative vector KB (RAG) | [GitHub](https://github.com/veawho/via54MedCreativeDB) |
+| via54ADIdeahub | Medical communication creative vector KB (RAG) | [GitHub](https://github.com/veawho/via54ADIdeahub) |
 | via54GitHub | GitHub upload/sync experience notes | [GitHub](https://github.com/veawho/via54GitHub) |
 | via54Idea | Wizard Uncle's ideas and chat notes | [GitHub](https://github.com/veawho/via54Idea) |
 | Notebook | Daily notes | [GitHub](https://github.com/veawho/Notebook) |

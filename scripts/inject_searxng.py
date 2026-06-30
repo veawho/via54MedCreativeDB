@@ -99,7 +99,7 @@ def build_searxng_section(case_data):
     lines.append(f"- 数据获取时间: {datetime.now().strftime('%Y-%m-%d')}\n")
 
     lines.append(f"\n---\n")
-    lines.append(f"*via54MedCreativeDB | SearXNG 自动补充*\n")
+    lines.append(f"*via54ADIdeahub | SearXNG 自动补充*\n")
 
     return "".join(lines)
 

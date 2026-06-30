@@ -1,5 +1,5 @@
 """
-via54_rag CLI — via54MedCreativeDB 命令行工具
+via54_rag CLI — via54ADIdeahub 命令行工具
 用法:
   python3 -m via54_rag build [--force]   # 重建索引
   python3 -m via54_rag search <query>     # 直接搜索

@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 type: software
-title: "via54MedCreativeDB"
+title: "via54ADIdeahub"
 abstract: "Medical communication creative vector knowledge base - RAG semantic search + 52 global creative case reports"
 authors:
   - family-names: "veawho"
@@ -9,7 +9,7 @@ authors:
     alias: "veawho"
 date-released: 2026-06-29
 license: AGPL-3.0
-repository-code: "https://github.com/veawho/via54MedCreativeDB"
+repository-code: "https://github.com/veawho/via54ADIdeahub"
 keywords:
   - via54
   - veawho

@@ -14,7 +14,7 @@ import sqlite3, json, re, os, sys
 from pathlib import Path
 
 EXPAND_DIR = Path.home() / "Desktop/创意案例库_扩充"
-DB_PATH    = Path.home() / "Desktop/developments/via54MedCreativeDB/via54_rag/vector.db"
+DB_PATH    = Path.home() / "Desktop/developments/via54ADIdeahub/via54_rag/vector.db"
 
 # ── 分块逻辑 ──────────────────────────────────────────────
 def chunk_text(text: str, max_tokens: int = 300) -> list[str]:

@@ -1,10 +1,10 @@
 ---
-title: via54MedCreativeDB 设计文档
+title: via54ADIdeahub 设计文档
 description: 医学传播创意向量知识库 · 设计与实现说明
 version: 1.0
 date: 2026-06-22
 license: MIT
-repository: ~/Desktop/developments/via54MedCreativeDB
+repository: G:/agent/ai/projects/via54ADIdeahub
 keywords: [medical-marketing, creative-brief, case-study, tfidf, vector-search, hermes-agent, rag, knowledge-base]
 topics: [medical-marketing, creative-strategy, campaign-analysis, competitive-analysis, brand-positioning]
 last_updated: 2026-06-22
@@ -12,7 +12,7 @@ dimensions: 12
 framework_sources: [digitaling, meihua, cannes-lions]
 ---
 
-# via54MedCreativeDB 设计文档
+# via54ADIdeahub 设计文档
 
 > 医学传播创意向量知识库 · 设计与实现说明
 > 版本：1.0 · 2026-06-22
@@ -164,7 +164,7 @@ framework_sources: [digitaling, meihua, cannes-lions]
 Hermes Agent 收到用户消息后，**语义匹配** Skill 名称和描述：
 
 ```
-Skill: via54MedCreativeDB
+Skill: via54ADIdeahub
 Description: 医学传播创意向量知识库 — 语义匹配触发，
              当用户询问医学传播、创意思路、创意案例时自动调用
 Trigger: 语义匹配 — 关联内容：医学传播创意、创意思路、创意案例
@@ -551,7 +551,7 @@ python3 via54_rag_search.py "医药品牌情感创意" 5
 
 ```bash
 # 手动
-cd /Users/david/Desktop/developments/via54MedCreativeDB
+cd G:/agent/ai/projects/via54ADIdeahub
 python3 -m via54_rag serve
 
 # launchd 守护（崩溃自动重启）
@@ -563,7 +563,7 @@ launchctl load ~/Library/LaunchAgents/com.via54.rag.plist
 1. 将 PDF 放入 `/Users/david/Desktop/创意案例库/`
 2. 重建索引：
    ```bash
-   cd /Users/david/Desktop/developments/via54MedCreativeDB
+   cd G:/agent/ai/projects/via54ADIdeahub
    python3 -m via54_rag build --force
    ```
 
@@ -607,7 +607,7 @@ launchctl load ~/Library/LaunchAgents/com.via54.rag.plist
 
 通过 GitHub API 搜索 `marketing + case study + database`、`medical + marketing + vector` 等关键词组合，结果如下：
 
-| 项目 | Stars | 技术栈 | 定位 | 与 via54MedCreativeDB 差异 |
+| 项目 | Stars | 技术栈 | 定位 | 与 via54ADIdeahub 差异 |
 |------|-------|-------|------|------------------------|
 | **tomonome-knowledge-base** | 7★ | Shell + Markdown | 通用营销知识库，AI/LLM 优化 | 纯文本无向量检索，非医学专用，无 PDF ingestion |
 | **azure-ceo** | 11★ | Azure OpenAI + Semantic Kernel + FastAPI + Azure AI Search | 企业多代理 RAG 营销自动化 | 企业级 Azure 方案，非医学专用，无 PDF pipeline |
@@ -626,7 +626,7 @@ launchctl load ~/Library/LaunchAgents/com.via54.rag.plist
 - **非医学传播专用**：无 D10 合规伦理 / D12 传播类型专项
 - **无 Agent 原生集成**：不是 Hermes Agent 的知识工具
 
-via54MedCreativeDB 的唯一性：
+via54ADIdeahub 的唯一性：
 
 1. **12 维医学传播框架** — D10 合规伦理 / D12 传播类型专项是医学传播专用维度，GitHub 无对应实现
 2. **纯 Python TF-IDF + SQLite** — 零外部依赖（vs azure-ceo 的 Azure 生态），~400 行代码，一台 MacBook 即可运行
@@ -638,7 +638,7 @@ via54MedCreativeDB 的唯一性：
 
 参考 `tomonome-knowledge-base` 的以下设计：
 
-| tomonome 特色 | 在 via54MedCreativeDB 中的对应实现 |
+| tomonome 特色 | 在 via54ADIdeahub 中的对应实现 |
 |-------------|----------------------------------|
 | YAML frontmatter 元数据 | ✅ DESIGN.md + README.md 已添加 |
 | `/knowledge/index.md` 知识索引 | ✅ `/knowledge/index.md` 12维标签总索引 |

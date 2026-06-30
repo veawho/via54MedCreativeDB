@@ -419,7 +419,7 @@ dimensions: [D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D12]
 
 # {title}
 
-> 规则模板分析版 · 2026-06-23 · via54MedCreativeDB
+> 规则模板分析版 · 2026-06-23 · via54ADIdeahub
 
 ## 案例概述
 

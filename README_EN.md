@@ -1,4 +1,4 @@
-# via54MedCreativeDB
+# via54ADIdeahub
 
 
 > **🌐 Language**: [🇨🇳 中文](./README.md) | [🇺🇸 English](#) (current)
@@ -7,8 +7,8 @@
 > Medical communication creative vector knowledge base - RAG semantic search + 52 global creative case reports
 
 [![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL--3.0-blue.svg)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/veawho/via54MedCreativeDB)](https://github.com/veawho/via54MedCreativeDB/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/veawho/via54MedCreativeDB)](https://github.com/veawho/via54MedCreativeDB/issues)
+[![GitHub stars](https://img.shields.io/github/stars/veawho/via54ADIdeahub)](https://github.com/veawho/via54ADIdeahub/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/veawho/via54ADIdeahub)](https://github.com/veawho/via54ADIdeahub/issues)
 [![English README](https://img.shields.io/badge/README-English-blue.svg)](README_EN.md)
 [![中文 README](https://img.shields.io/badge/README-中文-red.svg)](README.md)
 
@@ -20,8 +20,8 @@ Medical communication creative vector knowledge base - RAG semantic search + 52 
 
 ```bash
 # Clone
-git clone https://github.com/veawho/via54MedCreativeDB.git
-cd via54MedCreativeDB
+git clone https://github.com/veawho/via54ADIdeahub.git
+cd via54ADIdeahub
 
 # Project-specific setup (see docs/)
 ```
@@ -45,9 +45,9 @@ cd via54MedCreativeDB
 ```bibtex
 @software{via54_medcreativedb,
   author = {veawho (巫师叔叔)},
-  title  = {via54MedCreativeDB},
+  title  = {via54ADIdeahub},
   year   = {2026},
-  url    = {https://github.com/veawho/via54MedCreativeDB}
+  url    = {https://github.com/veawho/via54ADIdeahub}
 }
 ```
 
@@ -66,4 +66,4 @@ See [REFERENCES.md](REFERENCES.md) - all via54 repos + upstream projects.
 ## Contact
 
 - Owner: [veawho (巫师叔叔)](https://github.com/veawho)
-- Issues: [GitHub Issues](https://github.com/veawho/via54MedCreativeDB/issues)
+- Issues: [GitHub Issues](https://github.com/veawho/via54ADIdeahub/issues)

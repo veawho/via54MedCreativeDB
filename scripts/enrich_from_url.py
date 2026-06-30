@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-案例扩充 URL 抓取器 — via54MedCreativeDB
+案例扩充 URL 抓取器 — via54ADIdeahub
 功能：
   1. 从 metadata.json 的 text_preview 中提取源 URL
   2. 用 curl 直接抓取原文页面
@@ -13,7 +13,7 @@ from pathlib import Path
 from datetime import datetime
 from urllib.parse import urlparse
 
-PYTHON_BIN = "/Users/david/.hermes/hermes-agent/venv/bin/python3"
+PYTHON_BIN = "C:/Users/via54/AppData/Local/hermes/venv/Scripts/python.exe"
 CASES_DIR   = Path.home() / "Desktop" / "创意案例库_扩充"
 
 # ─── URL 提取 ───
@@ -208,7 +208,7 @@ dimensions: [D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D12]
 
 # {case_title}
 
-> 网络扩充版 · 2026-06-23 · via54MedCreativeDB
+> 网络扩充版 · 2026-06-23 · via54ADIdeahub
 
 ## 案例概述
 
