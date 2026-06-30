@@ -1,6 +1,6 @@
 ---
 title: 12维框架速查压缩版
-description: via54MedCreativeDB 知识库压缩摘要 — 用于 LLM prompt 上下文节省 token
+description: via54ADIdeahub 知识库压缩摘要 — 用于 LLM prompt 上下文节省 token
 version: 1.0
 date: 2026-06-22
 last_updated: 2026-06-22
@@ -8,7 +8,7 @@ format: compressed-summary
 purpose: LLM context compression for token saving
 ---
 
-# via54MedCreativeDB 12维框架速查（压缩版）
+# via54ADIdeahub 12维框架速查（压缩版）
 
 > 知识库检索结果 → 12维分析 → 创意简报
 > 本文档为 LLM 上下文压缩版，可在 prompt 中直接引用
@@ -131,4 +131,4 @@ purpose: LLM context compression for token saving
 
 ---
 
-*压缩版 · via54MedCreativeDB · 用于 LLM 上下文节省 token · 2026-06-22*
+*压缩版 · via54ADIdeahub · 用于 LLM 上下文节省 token · 2026-06-22*

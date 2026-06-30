@@ -560,7 +560,7 @@ launchctl load ~/Library/LaunchAgents/com.via54.rag.plist
 
 ### 8.2 新增 PDF
 
-1. 将 PDF 放入 `/Users/david/Desktop/创意案例库/`
+1. 将 PDF 放入 `G:/agent/ai/projects/创意案例库/`
 2. 重建索引：
    ```bash
    cd G:/agent/ai/projects/via54ADIdeahub

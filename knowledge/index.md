@@ -1,6 +1,6 @@
 ---
 title: Knowledge Index
-description: via54MedCreativeDB 结构化知识总索引 — 12维医学传播创意框架
+description: via54ADIdeahub 结构化知识总索引 — 12维医学传播创意框架
 version: 1.0
 date: 2026-06-22
 last_updated: 2026-06-22
@@ -8,7 +8,7 @@ last_updated: 2026-06-22
 
 # Knowledge Index
 
-> via54MedCreativeDB 结构化知识总索引
+> via54ADIdeahub 结构化知识总索引
 > 基于数英网 × 梅花网 × Cannes Lions 三大来源
 
 ---
@@ -327,4 +327,4 @@ last_updated: 2026-06-22
 
 ---
 
-*最后更新：2026-06-22 · via54MedCreativeDB*
+*最后更新：2026-06-22 · via54ADIdeahub*
